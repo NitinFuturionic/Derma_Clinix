@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/NavBar.css" />
+    <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/Rheumatologist.css" />
+    <link rel="stylesheet" href="./css/Treatments.css" />
+    <link rel="stylesheet" href="./css/Why_Us_Section.css" />
+    <link rel="stylesheet" href="./css/Footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+        }
+    </style>
+
+
+    
+  </head>
+  <body>
+    <!-- Navbar in big device  -->
+    <div class="NavBar-buttons">
+      <img src="./images/DERMA Logo.webp" alt="Clinic Logo" class="logo" />
+      <div class="buttons">
+        <a href="tel:+918882227080" style="text-decoration: none;">
+        <button class="NavBar-button">
+          <img src="./images/telephone.webp" alt="Call" class="icon" />
+          <span> +918882227080</span>
+        </button>
+    </a>
+        <a href="https://wa.me/918882227080" target="_blank" style="text-decoration: none;">
+        <button class="NavBar-button">
+          <img src="./images/whatsapp.webp" alt="WhatsApp" class="icon" />
+          <span> +918882227080</span>
+        </button>
+    </a>
+        <button class="NavBar-button" id="top_button" style="background-color: #dc4e52">
+          <span> Book Appointment</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navbar in small device  -->
+    <div class="SmallNavBar">
+      <img
+        src="./images/DERMA Logo.webp"
+        alt="Clinic Logo"
+        class="SmallNavBar-logo"
+      />
+      <div class="SmallNavBar-buttons">
+        <button class="SmallNavBar-appointmentButton">
+          <span>Book Appointment</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="main-container">
+        <div class="doctor-info">
+          <span class="doctor-name">
+            Dr. Swetal <span class="doctor-name-gray">Chouhan</span>
+          </span>
+          <span class="doctor-position">
+            Consultant Rheumatologist at <strong>DERMACLINIX &</strong> MAX
+            Saket
+          </span>
+          <span class="doctor-degree">MBBS DNB (INT MEDICINE)</span>
+          <span class="doctor-sub-details">Rheumatologist</span>
+          <span class="doctor-degree"
+            >Successfully Treated 20,000+ patients</span
+          >
+          <div class="custom-text">
+            <div class="text-line">
+              Fellowship in Rheumatology from Max. Saket, Delhi
+            </div>
+            <div class="text-line">
+              Fellowship in Rheumatology from Johns Hopkins Hospital, Baltimore,
+              USA
+            </div>
+            <div class="text-line">
+              EULAR Certified - Expertise in advanced diagnosis & treatment of
+              rheumatological conditions
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="experience">
+            <span class="years">14+</span>
+            <span class="text"
+              >Years of <br />
+              Experience</span
+            >
+          </div>
+          <img
+            src="./images/webpeditor_Dr_Swetal_Chouhan.webp"
+            alt="Dr Swetal Chouhan"
+            class="doctor-image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Best Rheumatologist
+in South Delhi  -->
+    <div class="grid-container">
+      <div class="text-section">
+        <p class="heading">
+          Best <span class="highlight">Rheumatologist</span> <br />
+          in <span class="location">South Delhi</span>
+        </p>
+        <br />
+        <p>
+          <span class="highlight">DermaClinik</span> is one of the leading
+          hospitals in the city, offering exceptional multispecialty treatment
+          in dermatology and rheumatology.
+        </p>
+        <br />
+        <p>
+          Dr. Swetal Chouhan is a highly qualified and recognized doctor,
+          holding an MBBS degree in rheumatology and a fellowship at John
+          Hopkins Hospital, Baltimore. She has been instrumental in reshaping
+          the lives of hundreds of patients with rare and life-affecting
+          disorders including arthritis, osteoporosis, osteoarthritis, lupus,
+          rheumatoid arthritis, and Spondylarthritis. Her knowledge is matched
+          by her genuine concern towards all her patients.
+        </p>
+      </div>
+      <div class="sidebar">
+        <div class="Hospital_Name">
+          <p>MAX HOSPITAL Saket (West Block)</p>
+        </div>
+        <div class="Hospital_timings">
+          <p>Mon - Tue - Wed - Thu - Fri</p>
+        </div>
+        <div class="Hospital_Name">
+          <p>Max Smart</p>
+        </div>
+        <div class="Hospital_timings">
+          <p>Tue - Thu - Sat</p>
+        </div>
+        <div class="Hospital_Name">
+          <p>DERMAClinix (South Delhi)</p>
+        </div>
+        <div class="Hospital_timings">
+          <p>Wed - Fri - Sat</p>
+        </div>
+       
+        <div class="appointment-container">
+          <div class="arrow-icon">
+            <img src="./images/ArrowR.....webp" alt="Arrow" />
+          </div>
+          <button id="Book_Appointment" class="appointment-btn">Book Appointment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- All Treatments -->
+    <div class="Treatments_container">
+      <span class="heading-Treatments">All Treatments</span>
+
+      <div class="boxes">
+        <div class="box">
+          <img src="./images/Image 1.webp" alt="Box 1" class="box-image" />
+          <h3 class="box-title">Rheumatoid Arthritis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 2.webp" alt="Box 2" class="box-image" />
+          <h3 class="box-title">Spondyloarthritis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 3.webp" alt="Box 3" class="box-image" />
+          <h3 class="box-title">Sjogren Syndrome</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 4.webp" alt="Box 4" class="box-image" />
+          <h3 class="box-title">Vasculitis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 5.webp" alt="Box 5" class="box-image" />
+          <h3 class="box-title">Behcet Syndrome</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 6.webp" alt="Box 6" class="box-image" />
+          <h3 class="box-title">Scleroderma</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 7.webp" alt="Box 7" class="box-image" />
+          <h3 class="box-title">Inflammatory Myositis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 8.webp" alt="Box 8" class="box-image" />
+          <h3 class="box-title">Osteoporosis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 9.webp" alt="Box 9" class="box-image" />
+          <h3 class="box-title">Metabolic Bone Disease</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 10.webp" alt="Box 10" class="box-image" />
+          <h3 class="box-title">Osteoarthritis</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 11.webp" alt="Box 11" class="box-image" />
+          <h3 class="box-title">Fibromyalgia</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 12.webp" alt="Box 12" class="box-image" />
+          <h3 class="box-title">Musculoskeletal Pain Disorders</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 13.webp" alt="Box 13" class="box-image" />
+          <h3 class="box-title">Autoimmune Diseases</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 14.webp" alt="Box 14" class="box-image" />
+          <h3 class="box-title">Lupus</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 15.webp" alt="Box 15" class="box-image" />
+          <h3 class="box-title">Gout</h3>
+        </div>
+        <div class="box">
+          <img src="./images/Image 16.webp" alt="Box 16" class="box-image" />
+          <h3 class="box-title">CPPD</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Us Section -->
+    <div class="Why_Us_container">
+      <div class="why-us">
+        <h2>WHY <span style="color: #848484">US</span></h2>
+        <p>
+          Our goal is to keep our patients happy, providing them with the
+          highest quality of service and the best possible outcomes.
+        </p>
+        <div class="features">
+          <div class="feature-item">
+            <p>Experienced rheumatologist with 14+ years of expertise</p>
+            <img src="./images/doctor-patient-physi.webp" alt="Expertise" />
+          </div>
+          <div class="feature-item">
+            <p>Comprehensive, patient-centered approach</p>
+            <img
+              src="./images/gettyimages-13908866.webp"
+              alt="Patient-centered"
+            />
+          </div>
+          <div class="feature-item">
+            <p>Advanced diagnostic tools and state-of-the-art facilities</p>
+            <img
+              src="./images/Ultrasound-Pediatric.webp"
+              alt="Advanced tools"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Enquiry Form Section -->
+      <div  id="enquiry-form" class="enquiry-form">
+        <h3>ENQUIRY FORM</h3>
+        <input type="text" placeholder="Fullname" />
+        <input type="email" placeholder="E-mail" />
+        <input type="tel" placeholder="Number" />
+        <input type="text" placeholder="Appointment for hospital" />
+        <!-- <input type="date" placeholder="Appointment for date"> -->
+
+        <input
+          type="text"
+          id="appointmentDate"
+          placeholder="Appointment for date"
+          onfocus="this.type='date'"
+          onblur="this.type='text'"
+        />
+        <!-- <button>Submit</button> -->
+        <button>
+          Submit <img src="./images/Arrow.....webp" alt="Arrow Icon" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- Left side: Map -->
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14016.408566727447!2d77.2292241!3d28.5666954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce24ff92063d3%3A0x1718b8024a0416a1!2sDermaClinix%20Hair%20Transplant%20in%20Delhi%20-%20Best%20Hair%20Transplant%20Clinic%20%7C%20Best%20Dermatologist%2C%20Skin%20%26%20Laser%20Specialist%20South%20Delhi!5e0!3m2!1sen!2sin!4v1731061480397!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <!-- Right side: Contact Info -->
+        <div class="footer-contact-info">
+          <div class="contact-btn">Contact Us</div>
+          <div class="footer-contact-details">
+            <div class="footer-contact-item">
+              <img
+                src="./images/telephone (1).webp"
+                alt="Phone Icon"
+                class="icon"
+              />
+              <a href="tel:+91 85888 20554" style="text-decoration: none;">
+              <span style="font-size: 17px">+91 85888 20554</span>
+              </a>
+            </div>
+            <div class="footer-contact-item">
+              <img src="./images/email.webp" alt="Email Icon" class="icon" />
+              <span style="font-size: 17px">drswetalchouhan@gmail.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <img
+                src="./images/location.webp"
+                alt="Location Icon"
+                class="icon"
+              />
+              <span style="font-size: 17px"
+                >E-13, Basement, Defence Colony Ring Road, New Delhi -
+                110024</span
+              >
+            </div>
+            <div class="footer-contact-item">
+              <span style="font-size: 17px; padding-top: 10px">Stay Tuned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <span class="company-name"
+          ><img
+            src="./images/C.webp"
+            alt="Company Logo"
+            class="company-logo"
+          />DermaClinix <span style="color: white">- All right reserved</span>
+        </span>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="social-icon"
+          ><img src="./images/instagram.webp" alt="Instagram"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="./images/linkedin.webp" alt="Twitter"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="./images/facebook.webp" alt="Facebook"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="./images/Pin.webp" alt="LinkedIn"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="./images/youtube.webp" alt="YouTube"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="./images/twitter.webp " alt="twitter"
+        /></a>
+      </div>
+    </div>
+    <!-- Small Device Footer -->
+    <div class="SmallFooter">
+      <div class="SmallFooter-section">
+        <img
+          src="./images/phone-call-svgrepo-com.svg"
+          alt="Call Icon"
+          class="SmallFooter-icon"
+        />
+        <a href="tel:+918882227080" style="text-decoration: none;">
+        <span class="SmallFooter-text">Call Now</span>
+    </a>
+      </div>
+      <div class="SmallFooter-divider"></div>
+      <div class="SmallFooter-section">
+        <img
+      style="width: 40px; height: 40px;"
+          src="./images/whatsappPNG.png"
+          alt="Chat Icon"
+          class="SmallFooter-icon"
+        />
+        <a href="https://wa.me/918882227080" target="_blank" style="text-decoration: none;">
+        <span class="SmallFooter-text">Chat with Us</span>
+    </a>
+      </div>
+    </div>
+
+    <script src="./js/Date.js" defer></script>
+  </body>
+</html>

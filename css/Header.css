@@ -1,0 +1,458 @@
+/* Base Styles */
+.header {
+  padding: 40px 40px 0px 40px ;
+  background: #ebebeb;
+  
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* z-index: 1; */
+  
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+/* .image-section {
+  flex: 0.5;
+  text-align: center;
+  width: 100%;
+} */
+
+.doctor-name {
+  font-family: "Segoe UI";
+  font-size: 50px;
+  font-weight: bold;
+  color: #dc4e52;
+
+}
+.doctor-degree {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #555;
+ 
+  border-color: #c52f33;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+  align-content: center;
+  
+
+}
+.doctor-name-gray {
+  color: #848484;
+}
+
+.doctor-sub-details{
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-weight: 900;
+
+  text-align: left;
+  letter-spacing: 1px;
+  color: #dc4e52 !important;
+  bottom: 15px;
+
+}
+.doctor-position,
+.doctor-sub-details {
+  display: block;
+  color: #848484;
+  /* font-size: 18px; */
+  padding: 20px 5px;
+}
+
+.custom-text  {
+  color: #333;
+  font-size: 16px;
+  padding: 3px 0;
+  margin-top: 20px;
+ 
+}
+
+.text-line{
+ 
+  border-bottom: 1px solid rgb(222, 220, 220);
+  width: 80%;
+  padding-top: 5px;
+}
+
+
+.image-section {
+  position: relative;
+  /* justify-content:space-between; */
+  display: inline-block;
+  max-width: 100%;
+  /* z-index: 100; */
+  
+  
+}
+
+.doctor-image {
+  width: 100%;
+  max-height: 450px;
+  display: block;
+  z-index: 1;
+ 
+}
+
+.experience {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: left;
+  position: absolute;
+  right: 75%;
+  bottom: 1%;
+
+  border-radius: 8px;
+  padding: 15px;
+  overflow: hidden;
+ 
+}
+
+/* .years {
+  font-family: "Open Sans";
+  font-size: 90px;
+  font-weight: bold;
+  color: #dc4e52;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.text {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 28px;
+  letter-spacing: 4px;
+  color: #313131;
+  border: 2px solid #dc4e52;
+  border-radius: 18px;
+  padding: 8px 10px;
+} */
+.experience .years {
+  font-family: "Open Sans";
+  font-size: 100px;
+  font-weight: bold;
+  color: #dc4e52;
+  letter-spacing: 5px;
+}
+
+.experience .text {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 3px;
+
+  color: #313131;
+  width: 220px;
+  height: 70px;
+  border-color: #dc4e52;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 912px) {
+ 
+
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+   /* padding-left: 40%; */
+   justify-content: center; /* Align items to the right */
+   align-items: center; /* Vertically center items if needed */
+   width: 100%; 
+  }
+
+  .doctor-image {
+    max-width: 300px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+   
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+  flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 38%;
+    /* left: 0%; */
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+   
+    
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line{  
+   width: 100%;
+  }
+  
+}
+
+/* Extra small mobile devices (very small phones, 321px to 400px) */
+@media (min-width: 321px) and (max-width: 441px) {
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+   /* padding-left: 40%; */
+   justify-content: flex-end; /* Align items to the right */
+   align-items: center; /* Vertically center items if needed */
+   width: 100%; 
+  }
+
+  .doctor-image {
+    max-width: 180px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+   
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+  flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 35%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+   
+    
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line{  
+   width: 100%;
+  }
+
+}
+
+@media (width: 1024px) {
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+   /* padding-left: 40%; */
+   justify-content: center; /* Align items to the right */
+   align-items: center; /* Vertically center items if needed */
+   width: 100%; 
+  }
+
+  .doctor-image {
+    max-width: 280px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+   
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+  flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 50%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+   
+    
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line{  
+   width: 100%;
+  }
+}
+
+@media (width: 540px) {
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+   /* padding-left: 40%; */
+   justify-content: center; /* Align items to the right */
+   align-items: center; /* Vertically center items if needed */
+   width: 100%; 
+  }
+
+  .doctor-image {
+    max-width: 280px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+   
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+  flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 34%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+   
+    
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line{  
+   width: 100%;
+  }
+}
+
+/* Tiny screens (extra small phones, 320px and below) */
+/* @media (max-width: 320px) {
+  .text {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+} */

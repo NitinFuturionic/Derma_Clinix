@@ -1,0 +1,213 @@
+.Why_Us_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Controls max width on larger screens */
+    
+   
+   justify-content: space-between;
+    overflow: hidden;
+    margin: 0 auto; /* Centers container on larger screens */
+}
+
+.why-us {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Optional max width for readability */
+}
+
+.why-us h2 {
+    color: #D32F2F;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.why-us p {
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .feature-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    align-content: center;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #333;
+} */
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 0px 50px 50px 0px; /* Rounded on the right side */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.15 ));
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #707070;
+    
+    font-weight: 500;
+    text-align: start;
+    flex: 1; /* Makes the text take up remaining space */
+    margin: 0;
+}
+
+.feature-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 15px; /* Adds some space between text and image */
+}
+
+
+.enquiry-form {
+    flex: 1;
+    background: url('/images/Group\ 41[1].png') no-repeat center;
+    background-size: cover;
+    padding: 40px;
+     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; 
+    
+}
+
+.enquiry-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background-color: rgba(210, 210, 210, 0.8);  */
+    border-radius: 20px 20px 20px 20px;
+    /* filter: blur(1px);Adjust the blur level */
+}
+
+
+.enquiry-form h3 {
+    position: relative;
+    color: #D32F2F;
+    font-size: 27px;
+    margin: 0 auto 20px; 
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color:#f9f9f9;
+    border: 1px solid #ddd;
+    padding: 12px ;
+    width: 70%;
+ 
+}
+
+.enquiry-form input {
+    position: relative;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    
+    background-color: rgba(300, 300, 300, 0.8);
+}
+
+.enquiry-form button {
+    
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #D32F2F;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button img {
+    width: 20px; /* Adjust image size */
+    height: auto;
+    fill: white; 
+    margin-left: 8px; /* Space between text and image */
+  }
+
+.enquiry-form input::placeholder {
+    /* font-weight: bold;  */
+    font-weight: 300;
+    color: #707070;
+    letter-spacing: 2px;
+}
+
+.enquiry-form input[type="text"] {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enquiry-form input[type="text"]:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .Why_Us_container {
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .enquiry-form {
+        border-radius: 20px 20px 20px 20px;
+        max-width: none;
+    }
+}

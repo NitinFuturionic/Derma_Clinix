@@ -1,0 +1,250 @@
+  /* Styles for the small navbar */
+  .SmallNavBar {
+    display: none; /* Hidden by default */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    align-items: center;
+    padding: 10px;
+    /* flex-direction: column; */
+  }
+
+  .SmallNavBar-logo {
+    width: 130px;
+    height: auto;
+    margin-right: auto;
+    margin-bottom: 10px; 
+  }
+
+  .SmallNavBar-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .SmallNavBar-appointmentButton {
+    background-color: #dc4e52;
+    color: #fff;
+    width: 180px;
+    height: 35px;
+    border: none;
+    border-radius: 39px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+/* Container for the logo and buttons */
+.NavBar-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+  background: #ebebeb;
+}
+
+/* Logo image styling */
+.logo {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+ 
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 20px; /* Space between the buttons */
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Button styling */
+.NavBar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  background-color: #202020;
+  border: none;
+  border-radius: 39px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.NavBar-button:hover {
+  background-color: #333;
+}
+
+/* Icon styling */
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+/* Icon and text in a row */
+.NavBar-button span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .NavBar-buttons {
+      display: none; /* Hide the NavBar */
+    }
+  }
+
+@media (max-width: 854px) {
+  .NavBar-buttons {
+    flex-direction: row;
+    align-items: flex-start !important;
+    /* justify-content: start; */
+  }
+
+  .logo {
+    margin-bottom: 12px; /* Space between the logo and buttons */
+    width: 130px; /* Adjust size for smaller screens */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row; /* Stack the buttons vertically */
+    /* gap: 10px; Space between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavBar-button {
+    width: 180px; /* Adjust button size for small screens */
+    height: 35px;
+  }
+
+  .icon {
+    width: 17px;
+    height: 18px;
+    margin-right: 2px;
+  }
+
+  .NavBar-button span {
+    margin-top: 5px;
+
+    font-size: 9px;
+  }
+}
+@media (max-width: 768px) {
+  /* Stack the logo and buttons vertically */
+  .NavBar-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .NavBar-buttons {
+    display: none; /* Hide large navbar on small screens */
+  }
+
+  .SmallNavBar {
+    display: flex; /* Show small navbar on small screens */
+  }
+  
+  .logo {
+    margin-bottom: 12px; /* Space between the logo and buttons */
+    width: 130px; /* Adjust size for smaller screens */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row; /* Stack the buttons vertically */
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavBar-button {
+    width: 180px; /* Adjust button size for small screens */
+    height: 35px;
+  }
+
+  .icon {
+    width: 17px;
+    height: 18px;
+    margin-right: 2px;
+  }
+
+  .NavBar-button span {
+    margin-top: 5px;
+
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 778px) {
+  .NavBar-buttons {
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+   
+  }
+
+  .logo {
+    margin-bottom: 12px; /* Space between the logo and buttons */
+    width: 130px; /* Adjust size for smaller screens */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row; /* Stack the buttons vertically */
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavBar-button {
+    width: 100px; /* Adjust button size for small screens */
+    height: 35px;
+  }
+
+  .icon {
+    width: 17px;
+    height: 18px;
+    margin-right: 2px;
+  }
+
+  .NavBar-button span {
+    margin-top: 5px;
+
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NavBar-buttons {
+    position: relative;
+    
+    padding: 10px;
+  }
+
+  .NavBar-button {
+    font-size: 0.7rem;
+    width: 90px;
+    height: 23px;
+  }
+
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+
+
+  
+
