@@ -199,6 +199,11 @@ footer {
         margin-top: 20px;
     }
 }
+@media (min-width: 768px) {
+    .SmallFooter {
+        display: none !important;
+    }
+}
 
 /* Devices smaller than 768px */
 @media (max-width: 768px) {
@@ -206,12 +211,6 @@ footer {
         display: flex  !important;
       }
 
-
-     
-
- 
-
-    
     footer {
         padding: 30px 30px 30px 3rem;
     }
