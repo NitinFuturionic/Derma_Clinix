@@ -2,17 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px; /* Controls max width on larger screens */
-    
    
+    
+   /* gap: 8rem; */
    justify-content: space-between;
     overflow: hidden;
-    margin: 0 auto; /* Centers container on larger screens */
+    padding: 0px 7rem 0px 6.5rem ;
 }
 
 .why-us {
     flex: 1;
-    padding: 40px;
+    /* padding: 40px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,12 +22,14 @@
 
 .why-us h2 {
     color: #D32F2F;
-    font-size: 24px;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .why-us p {
     color: #707070;
+    font-size: 1.1rem;
+    line-height: 28px;
     margin-bottom: 30px;
 }
 
@@ -37,27 +39,7 @@
     gap: 20px;
 }
 
-/* .feature-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    align-content: center;
-    background-color: #f9f9f9;
-    border-radius: 25px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.feature-item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.feature-item p {
-    font-size: 14px;
-    color: #333;
-} */
 
 .feature-item {
     display: flex;
@@ -71,7 +53,8 @@
 }
 
 .feature-item p {
-    font-size: 16px;
+    font-size: 1.1rem;
+    line-height: 28px;
     color: #707070;
     
     font-weight: 500;
@@ -102,31 +85,19 @@
     max-width: 450px;
     border-radius: 20px 20px 20px 20px;
     position: relative;
-    display: flex;
+
     justify-content: center; /* Centers the button horizontally */
     align-items: center; 
     
 }
 
-.enquiry-form::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* background-color: rgba(210, 210, 210, 0.8);  */
-    border-radius: 20px 20px 20px 20px;
-    /* filter: blur(1px);Adjust the blur level */
-}
 
 
-.enquiry-form h3 {
+
+.enquiry-form h2 {
     position: relative;
     color: #D32F2F;
-    font-size: 27px;
+    font-size:1.8rem;
     margin: 0 auto 20px; 
     text-align: center;
     font-weight: bold;
@@ -194,20 +165,126 @@ button img {
 
 
 
+/* @media (width: 768px) {
+    .Why_Us_container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem; 
+    }
 
-
+     .enquiry-form {
+        flex: 1; 
+         max-width: 48%; 
+    }
+} */
 
 
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .Why_Us_container {
-        flex-direction: column;
+        /* flex-direction: column; */
         border-radius: 8px;
+        gap: 10px;
+        padding: 1.2rem 1.3rem 0px 1.3rem ;
+    }
+
+   
+  
+    .enquiry-form {
+       align-content:center ;
+        border-radius: 20px 20px 20px 20px;
+        max-width: 100%;
+    }
+    .why-us h2 {
+      
+        font-size: 1.5rem;
+      
+    }
+    .why-us p {
+   
+        font-size: 14.5px;
+        line-height: 22.5px;
+       
+    }
+    .enquiry-form h2 {
+     
+        font-size:1.1rem;
+       
+     
+    }
+    .enquiry-form button {
+    
+        position: relative;
+       
+        font-size: 1rem;
+       
+    }
+}
+
+
+/* Responsive design for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Why_Us_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .why-us, .enquiry-form {
+        flex: 1 1 45%; /* Ensures two items per row, adjusting width */
+        max-width: 45%; /* Restrict max width to 45% */
+        /* margin-bottom: 20px;  */
+    }
+
+    .why-us {
+        text-align: center; /* Center text for readability */
+    }
+
+    .why-us h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .why-us p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .feature-item {
+        flex: 1 1 45%; /* Maintain two feature items per row */
+        max-width: 100%; /* Set max width */
+        padding: 10px;
     }
 
     .enquiry-form {
-        border-radius: 20px 20px 20px 20px;
-        max-width: none;
+        padding: 1.5rem;
+        margin-top: 0px;
+    }
+
+    .enquiry-form h2 {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .enquiry-form input {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .enquiry-form button {
+        width: 60%;
+        font-size: 1.1rem;
+        padding: 12px;
     }
 }

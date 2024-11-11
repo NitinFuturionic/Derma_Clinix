@@ -1,108 +1,105 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  .Treatments_container {
-    text-align: center;
-    padding: 20px ;
-    background-color: #eae8e8;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Prevent overflow caused by padding */
-  }
-  
-  .heading-Treatments {
-    text-align: center; /* Center the text inside the heading */
-   
-  
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
-    width: 20%;
-    padding-bottom: 10px; /* Space between the text and the line */
-    /* margin-bottom: 20px; */
-    margin: 0%;
-    color: #dc4e52;
-    border-bottom:1px solid red;
-   
-  }
-  
-  .boxes {
-    display: flex;
-    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
-    justify-content: center; /* Center align items */
-    gap: 40px;
-    margin-top: 20px;
-    width: 100%;
-    padding: 30px 30px 30px 30px;
-    box-sizing: border-box;
-  }
-  
-  .box {
-    /* background-color: #3498db; */
-  
-    border-radius: 12px;
-    text-align: center;
-    width: 170px; 
-    height: 155px;
-    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.14 ));
-    background: #e9e9e9;
-    box-sizing: border-box;
-    
-    
-  }
-  
-  .box-image {
-    width: 100%;
-    height: 110px;
-   border-radius: 10px 10px;
-    margin-bottom: 10px;
-  }
-  
-  .box-title {
-  
-font-family: "Poppins";
-font-size: 16px;
-font-weight: 500;
-line-height: 13px;
-font-style: normal;
-text-align: center;
-justify-content: start;
-align-content: start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    color: #000000;
+body {
+  background-color: #f4f4f4;
+}
+
+.Treatments_container {
+  text-align: center;
+  padding: 30px 75px 40px 60px;
+  background-color: #eae8e8;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Prevent overflow caused by padding */
+}
+
+.heading-Treatments {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  margin: 0%;
+  color: #dc4e52;
+  width: 40%;
+  border-bottom: 1px solid red;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+  justify-content: center; /* Center align items */
+  gap: 38px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+.box {
+  border-radius: 12px;
+  text-align: center;
+  width: 188px;
+  height: 155px;
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.14));
+  background: #e9e9e9;
+  box-sizing: border-box;
+}
+
+.box-image {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.box-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+  font-style: normal;
+  text-align: center;
+  justify-content: start;
+  align-content: start;
+
+  color: #000000;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* For medium-sized devices */
+@media (max-width: 768px) {
+  .box {
+    width: 35%; /* Adjust box width for medium screens */
   }
-  
-  .image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  .heading-Treatments {
+    font-size: 1.5rem;
   }
-  
-  .text p {
-    font-size: 18px;
-    color: #333;
+  /* .boxes {
+    padding: 30px 0px 30px 0px;
+  } */
+  .Treatments_container {
+   
+    padding: 20px 20px 20px 20px;
+   
   }
-  
-  /* For medium-sized devices */
-  @media (max-width: 768px) {
-    .box {
-      width: 45%; /* Adjust box width for medium screens */
-    }
+}
+
+/* For small devices */
+@media (max-width: 480px) {
+  .box {
+    width: 42%; /* Adjust box width for small screens */
   }
-  
-  /* For small devices */
-  @media (max-width: 480px) {
-    .box {
-      width: 90%; /* Adjust box width for small screens */
-    }
-  }
-  
+}

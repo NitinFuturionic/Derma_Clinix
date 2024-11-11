@@ -3,23 +3,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Left section takes 2/3, right takes 1/3 */
     gap: 20px;
-    padding: 40px 40px 40px 40px;
+    padding: 70px 4rem 70px 6.5rem;
 }
 
 /* Styling for the text section */
 .text-section {
-font-family: "Poppins";
-font-size: 18px;
+
+font-size: 1.1rem;
 font-weight: normal;
-line-height: 30px;
+line-height: 28px;
 font-style: normal;
 text-align: left;
 color: #707070;
 }
 
 .heading{
-    font-family: "Poppins";
-    font-size: 47px;
+    
+    
    
     line-height: 60px;
     font-style: normal;
@@ -27,7 +27,7 @@ color: #707070;
     color: #848484;
 }
 .text-section h2 {
-    font-size: 20px;
+    font-size:2.5rem;
     font-weight: normal;
 }
 
@@ -51,7 +51,7 @@ color: #707070;
     gap: 5px;
     align-items: start;
     text-align: center;
-    width: 70%;
+    width: 82%;
 }
 
 /* Styling for Hospital Name */
@@ -59,14 +59,15 @@ color: #707070;
     background-color: #dbd6d6; /* Gray background for hospital names */
     padding: 5px;
     width: 100%;
+   
     border-radius: 15px 15px 0 0; /* Rounded top edges */
-    /* font-weight: bold; */
+    font-weight: bold;
     color:#707070 ; /* Darker color for text */
 }
 
 /* Styling for Hospital Timings */
 .Hospital_timings {
-    background-color: #ffffff; /* White background for hospital timings */
+   
     padding: 10px;
     width: 100%;
     border-radius: 0 0 5px 5px; /* Rounded bottom edges */
@@ -77,7 +78,13 @@ color: #707070;
 .appointment-container {
     display: flex;
     align-items: center;
+    align-content: center;
     position: relative;
+    left: 20%;
+    justify-content: center;
+   
+   
+  
     /* gap: 10px; Adjust the space between the icon and the button */
 }
 
@@ -93,7 +100,7 @@ color: #707070;
     height: 65px;
     left: -0px; 
     z-index:2 ;
-    margin-top: 10%;
+    margin-top: 20%;
     
 }
 
@@ -111,13 +118,14 @@ color: #707070;
     border-radius: 30px;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
     cursor: pointer;
     display: flex;
     align-items: center;
+   
     margin-left: 0px;
     padding-left: 80px;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 /* Optional: Hover effect for the button */
@@ -130,17 +138,46 @@ color: #707070;
 }
 
 
+
 /* Responsive styling */
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stacks sections vertically */
+        padding: 30px 30px 30px 30px;
     }
 
     .text-section h2 {
-        text-align: center;
+        text-align: start;
+        font-size: 1.5rem;
     }
+    .heading{
+
+        line-height: 30px;
+        
+    }
+  
+    .Hospital_Name {
+       
+      font-size: 0.9rem;
+       
+      
+    }
+    .text-section {
+
+        font-size: 14.5px;
+        line-height: 22px;
+       
+        }
+       
+   
     .sidebar {
         align-items: flex-start;
+        width: 100%;
+    }
+    .appointment-container {
+      
+        left: 0%;
+    
     }
     .appointment-btn {
        
@@ -159,5 +196,53 @@ color: #707070;
         height:50px;
       
         
+    }
+}
+
+
+
+/* Responsive design for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for text-section and sidebar */
+        padding: 50px 40px; /* Adjust padding for better spacing */
+        gap: 20px;
+    }
+
+    .text-section {
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+    .text-section h2 {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .sidebar {
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .appointment-container {
+        left: 10%;
+    }
+
+    .appointment-btn {
+        font-size: 16px;
+        padding-left: 70px; /* Adjust padding to position text within the button */
+        margin-top: 10%;
+    }
+
+    .arrow-icon {
+        width: 55px;
+        height: 55px;
+        margin-top: 15%;
+    }
+
+    .arrow-icon img {
+        width: 20px;
+        height: 15px;
     }
 }
