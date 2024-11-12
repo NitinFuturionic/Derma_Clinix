@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;  /* Center the content vertically */
     justify-content: center;  /* Center the content horizontally */
-    width: 200px;  /* Fixed width for each section */
+    width: 100%; 
     cursor: pointer;
 }
 
@@ -213,7 +213,7 @@ footer {
         display: flex  !important;
       }
       .SmallFooter-text {
-        font-size: 1.2rem;  
+        font-size: 1.2rem;  /* Decreased font size */
     }
 
     footer {
