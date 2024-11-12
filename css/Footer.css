@@ -4,32 +4,31 @@
     padding: 0;
     box-sizing: border-box;
   }
-.SmallFooter {
+  .SmallFooter {
     display: flex !important;
     position: sticky;
     bottom: 0;
     width: 100%;
     background-color: #d44346;
     z-index: 100;
-    justify-content: space-between;
+    justify-content: center;  /* Center the content */
     align-items: center;
-    padding:10px 20px;  /* Adjusted padding for better spacing */
+    padding: 8px 0px;/* Adjust padding to make space for sections */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    flex-wrap: nowrap;
 }
 
 .SmallFooter-section {
     display: flex;
-    align-items: start;
+    align-items: center;  /* Center the content vertically */
+    justify-content: center;  /* Center the content horizontally */
+    width: 200px;  /* Fixed width for each section */
     cursor: pointer;
-    padding: 0 20px;  /* Adjusted padding for better spacing */
-    justify-content: center;
 }
 
 .SmallFooter-icon {
     width: 24px;
     height: 24px;
-    margin-right: 10px;  /* Adjusted margin for spacing between icon and text */
+    margin-right: 10px;  /* Space between icon and text */
 }
 
 .SmallFooter-text {
@@ -41,8 +40,10 @@
     width: 1px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.3);
-    margin: 0 15px;  /* Adjusted margin for proper separation between sections */
+   
+    flex-shrink: 0;  /* Prevent shrinking of the divider */
 }
+
 
 
 
@@ -203,6 +204,7 @@ footer {
     .SmallFooter {
         display: none !important;
     }
+   
 }
 
 /* Devices smaller than 768px */
@@ -210,6 +212,9 @@ footer {
     .SmallFooter {
         display: flex  !important;
       }
+      .SmallFooter-text {
+        font-size: 1.2rem;  
+    }
 
     footer {
         padding: 30px 30px 30px 3rem;
@@ -294,7 +299,7 @@ footer {
 
 @media (max-width: 500px) {
     .SmallFooter {
-        padding: 8px 15px;
+        padding: 8px 0px;
     }
     
     .SmallFooter-icon {
@@ -308,7 +313,7 @@ footer {
 
     .SmallFooter-divider {
         height: 30px;  /* Adjusted divider height for smaller devices */
-        margin: 0 10px;  /* Reduced margin for smaller spacing */
+      
     }
 }
 
