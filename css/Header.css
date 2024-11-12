@@ -211,7 +211,7 @@
 }
 
 /* Extra small mobile devices (very small phones, 321px to 400px) */
-@media (min-width: 321px) and (max-width: 441px) {
+@media (min-width: 320px) and (max-width: 441px) {
   .doctor-name {
     font-size: 1.7rem;
   }
@@ -225,7 +225,7 @@
   }
 
   .doctor-image {
-    max-width: 180px;
+    max-width: 50vw;
     display: block;
     margin: 0;
     /* z-index: 1; */
@@ -245,26 +245,26 @@
     flex-direction: column;
     transform: translate(-0%, 5%);
     right: 0%;
-    left: 35%;
+    left: 38%;
     /* height: auto; */
     z-index: 1;
   }
 
   .experience .years {
-    font-size: 32px; /* Further reduced font size */
+    font-size: 28px; /* Further reduced font size */
     text-align: start;
   }
 
   .experience .text {
     /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 5px;
+    font-size: 12px;
+    padding: 0px 4px;
     height: auto;
     text-align: start;
   }
 
   .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
+    padding: 8px; /* Reduce padding around the entire experience box */
     transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
   }
   .text-line {
@@ -396,4 +396,187 @@
   }
 }
 
+@media (width: 480px) {
+  .doctor-name {
+    font-size: 20px;
+  }
 
+  .image-section {
+    display: flex;
+    /* padding-left: 40%; */
+    justify-content: center; /* Align items to the right */
+    align-items: center; /* Vertically center items if needed */
+    width: 100%;
+  }
+
+  .doctor-image {
+    max-width: 220px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 34%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line {
+    width: 100%;
+  }
+}
+@media (width: 600px) {
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+    /* padding-left: 40%; */
+    justify-content: center; /* Align items to the right */
+    align-items: center; /* Vertically center items if needed */
+    width: 100%;
+  }
+
+  .doctor-image {
+    max-width: 45vw;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 38%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line {
+    width: 100%;
+  }
+}
+
+@media (width: 712px) {
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .image-section {
+    display: flex;
+    /* padding-left: 40%; */
+    justify-content: center; /* Align items to the right */
+    align-items: center; /* Vertically center items if needed */
+    width: 100%;
+  }
+
+  .doctor-image {
+    max-width: 280px;
+    display: block;
+    margin: 0;
+    /* z-index: 1; */
+    justify-content: end;
+  }
+
+  .doctor-position,
+  .doctor-degree,
+  .doctor-sub-details,
+  .custom-text .text-line {
+    font-size: 16px;
+  }
+
+  .experience {
+    /* font-size: 15px; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    transform: translate(-0%, 5%);
+    right: 0%;
+    left: 42%;
+    /* height: auto; */
+    z-index: 1;
+  }
+
+  .experience .years {
+    font-size: 32px; /* Further reduced font size */
+    text-align: start;
+  }
+
+  .experience .text {
+    /* width: 100%; */
+    font-size: 15px;
+    padding: 0px 5px;
+    height: auto;
+    text-align: start;
+  }
+
+  .experience {
+    padding: 10px; /* Reduce padding around the entire experience box */
+    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  }
+  .text-line {
+    width: 100%;
+  }
+}

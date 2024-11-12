@@ -292,3 +292,23 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .SmallFooter {
+        padding: 8px 15px;
+    }
+    
+    .SmallFooter-icon {
+        width: 20px;  /* Decreased width */
+        height: 20px;  /* Decreased height */
+    }
+
+    .SmallFooter-text {
+        font-size: 0.8rem;  /* Decreased font size */
+    }
+
+    .SmallFooter-divider {
+        height: 30px;  /* Adjusted divider height for smaller devices */
+        margin: 0 10px;  /* Reduced margin for smaller spacing */
+    }
+}
+
