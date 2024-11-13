@@ -78,30 +78,27 @@ color: #707070;
 .appointment-container {
     display: flex;
     align-items: center;
-    align-content: center;
-    position: relative;
-    left: 20%;
     justify-content: center;
-   
-   
-  
-    /* gap: 10px; Adjust the space between the icon and the button */
+    position: relative;
+    text-align: center;
+    
+    width: 100%;
+    margin-top: 8%;
+    
 }
 
 /* Arrow icon styling */
 .arrow-icon {
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 50%;
+    background-color: #e0e0e0;       /* Light gray background */
+    border-radius: 50%;              /* Circular shape */
     display: flex;
     align-items: center;
-    position: absolute;
     justify-content: center;
-    width: 65px;
-    height: 65px;
-    left: -0px; 
-    z-index:2 ;
-    margin-top: 20%;
-    
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    margin-right: -50px;             /* Overlaps the button */
 }
 
 .arrow-icon img {
@@ -112,22 +109,20 @@ color: #707070;
 /* Button styling */
 .appointment-btn {
     padding: 17px 20px;
-    background-color: #dc4e52; /* Red background */
+    padding-left: 60px;              /* Space for the overlapping icon */
+    background-color: #dc4e52;       /* Red background */
     color: white;
     border: none;
     border-radius: 30px;
     font-size: 20px;
     font-weight: 600;
-    width: 100%;
     cursor: pointer;
     display: flex;
     align-items: center;
-   
-    margin-left: 0px;
-    padding-left: 80px;
-    margin-top: 20%;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
-
 /* Optional: Hover effect for the button */
 .appointment-btn:hover {
     background-color: #d34b32; /* Darker shade for hover */
@@ -175,8 +170,11 @@ color: #707070;
         width: 100%;
     }
     .appointment-container {
-      
-        left: 0%;
+      justify-items: center;
+      text-align: center;
+      width: 100%;
+    left: 0%;
+    margin-top: 8%;
     
     }
     .appointment-btn {
@@ -197,6 +195,9 @@ color: #707070;
       
         
     }
+
+
+    
 }
 
 
@@ -226,7 +227,8 @@ color: #707070;
     }
 
     .appointment-container {
-        left: 10%;
+        /* left: 10%; */
+        margin-top: 0%;
     }
 
     .appointment-btn {
