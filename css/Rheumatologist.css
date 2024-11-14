@@ -29,6 +29,15 @@ color: #707070;
 .text-section h2 {
     font-size:2.5rem;
     font-weight: normal;
+    text-transform: uppercase;
+}
+.heading_Two {
+    font-size:2.5rem;
+    font-weight: normal;
+    
+    color: #e74c3c;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .highlight {
@@ -62,7 +71,7 @@ color: #707070;
    
     border-radius: 15px 15px 0 0; /* Rounded top edges */
     font-weight: bold;
-    color:#707070 ; /* Darker color for text */
+    color:black ; /* Darker color for text */
 }
 
 /* Styling for Hospital Timings */
@@ -141,7 +150,7 @@ color: #707070;
         padding: 30px 30px 30px 30px;
     }
 
-    .text-section h2 {
+    .text-section h2,.heading_Two {
         text-align: start;
         font-size: 1.5rem;
     }
@@ -215,7 +224,7 @@ color: #707070;
         line-height: 26px;
     }
 
-    .text-section h2 {
+    .text-section h2,.heading_Two {
         font-size: 2rem;
         line-height: 50px;
     }

@@ -26,6 +26,7 @@ body {
   color: #dc4e52;
   width: 40%;
   border-bottom: 1px solid red;
+  text-transform: uppercase;
 }
 
 .boxes {
@@ -52,7 +53,7 @@ body {
 .box-image {
   width: 100%;
   height: 110px;
-  border-radius: 10px 10px;
+  border-radius: 10px 10px 0px  0px;
   margin-bottom: 10px;
 }
 
