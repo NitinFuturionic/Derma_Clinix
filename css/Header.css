@@ -160,6 +160,7 @@
   .doctor-degree {
     font-size: 1.5rem;
   }
+  
 }
 
 @media (min-width: 768px) and (max-width: 912px) {
@@ -290,61 +291,32 @@
     font-size: 2rem;
   }
 
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
+  .header {
+    padding: 10px 15px 0px 3rem !important;
+    background: #ebebeb;
   }
-
   .doctor-image {
-    max-width: 280px;
+    max-width: 38vw !important;
     display: block;
     margin: 0;
     /* z-index: 1; */
     justify-content: end;
   }
-
-  .doctor-position,
-  .doctor-degree,
-  .doctor-sub-details,
-  .custom-text .text-line {
-    font-size: 16px;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 0%;
-    left: 50%;
-    /* height: auto; */
-    z-index: 1;
-  }
-
   .experience .years {
-    font-size: 32px; /* Further reduced font size */
+    font-size: 3em;  /* Further reduced font size */
     text-align: start;
   }
-
   .experience .text {
     /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 5px;
+    width: 180px;
+  
+    height: 75px;
+    font-size: 1em;
+    padding: 0px 8px;
     height: auto;
     text-align: start;
   }
-
-  .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
-  }
-  .text-line {
-    width: 100%;
-  }
+ 
 }
 
 @media (width: 540px) {
