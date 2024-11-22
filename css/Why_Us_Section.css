@@ -178,7 +178,11 @@ button img {
     }
 } */
 
-
+.responsive-placeholder::placeholder {
+    font-size: 1rem; /* Base size */
+    color: #aaa; /* Placeholder color */
+    opacity: 1; /* Fully visible placeholder */
+}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -219,6 +223,11 @@ button img {
        
         font-size: 1rem;
        
+    }
+    .responsive-placeholder::placeholder {
+        font-size: 0.6rem; /* Base size */
+        color: #aaa; /* Placeholder color */
+        opacity: 1; /* Fully visible placeholder */
     }
 }
 

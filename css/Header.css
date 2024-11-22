@@ -7,7 +7,7 @@
 .main-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   gap: 20px;
   flex-wrap: wrap;
   /* z-index: 1; */
@@ -15,6 +15,8 @@
 
 .doctor-info {
   flex: 1;
+  /* padding-top: 4%; */
+  align-items: center;
 }
 
 .doctor-name {
@@ -69,12 +71,20 @@
   font-size: 1rem;
 }
 
+.text-line_smalldevice{
+  display: none;
+  border-bottom: 1px solid rgb(222, 220, 220);
+  width: 80%;
+  padding-top: 5px;
+  font-size: 1rem;
+}
 .image-section {
   display: flex;
   position: relative;
   /* justify-content:space-between; */
   /* display: inline-block; */
   max-width: 100%;
+  
   
  
 }
@@ -87,7 +97,21 @@
   z-index: 1;
   overflow: hidden;
   margin: 0;
+  justify-items: flex-end !important;
+  align-items: flex-end !important;
   
+}
+
+.doctor-image_Full {
+  display: none;
+  
+  max-height: 450px;
+
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  justify-items: flex-end !important;
+  align-items: flex-end !important;
 }
 
 .experience {
@@ -133,125 +157,155 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    padding: 10px 70px 0px 2rem;
-    background: #ebebeb;
-  }
-}
 
-/* Large devices (desktops, 992px to 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .text {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  
-
-}
 
 @media (max-width: 768px) {
-  .header {
-    padding: 30px 30px 0px 30px;
-  }
-  .doctor-sub-details {
-    font-size: 1.8rem;
-  }
-  .doctor-degree {
-    font-size: 1.5rem;
-  }
-  
-}
-
-@media (min-width: 768px) and (max-width: 912px) {
-  .doctor-name {
-    font-size: 1.8rem;
-  }
-
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
-  }
-
   .doctor-image {
-    max-width: 300px;
-    display: block;
+    max-width: 40vw !important;
+    display: none;
     margin: 0;
     /* z-index: 1; */
     justify-content: end;
   }
-
-  .doctor-position,
-  .doctor-degree,
-  .custom-text .text-line {
-    font-size: 1.2rem;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
+  .doctor-image_Full {
     display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 38%;
-    /* left: 0%; */
-    /* height: auto; */
-    z-index: 1;
+    max-width: 26vw !important;
   }
-
-  .experience .years {
-    font-size: 32px; /* Further reduced font size */
-    text-align: start;
+  .doctor-name {
+    font-size: 1.8rem !important;
   }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 10px;
-    height: auto;
-    text-align: start;
+  .main-container {
+    
+    
+    flex-wrap: nowrap;
+    /* z-index: 1; */
   }
-
+  .header {
+    padding: 30px 30px 0px 30px;
+  }
+  .doctor-sub-details {
+    font-size: 1.8rem !important;
+  }
+  .doctor-degree {
+    font-size: 0.5rem !important;
+  }
+  .text-line_smalldevice{
+    display: flex;
+    font-size: 14px;
+  }
   .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+    display: none;
+  } 
+  .doctor-position,
+ 
+  .custom-text .text-line {
+    font-size: 14px !important;
   }
-  .text-line {
-    width: 100%;
+
+}
+
+@media (max-width: 1022px) {
+  .header {
+    padding: 30px 30px 0px 30px ;
+  }
+ 
+ 
+  .doctor-sub-details {
+    font-size: 1.8rem;
+  }
+  
+  .text-line_smalldevice{
+    display: flex;
+  }
+  .experience {
+    display: none;
+  } 
+}
+@media (max-width: 1024px) {
+  .header {
+    padding: 30px 30px 0px 40px  !important;
+  }
+  .experience .years {
+    font-size: 80px;
+   
+    letter-spacing: 5px;
+  }
+  
+  .experience .text {
+    font-size: 18px;
+   
+    line-height: 28px;
+   
+    padding: 6px 6px 6px 15px;
+  
+    width: 200px;
+    
+    height: 75px;
+  
+   
+  
+  
   }
 }
 
+
 /* Extra small mobile devices (very small phones, 321px to 400px) */
-@media (min-width: 320px) and (max-width: 441px) {
+@media (min-width: 310px) and (max-width: 450px) {
+
+  .header {
+    padding: 30px 30px 0px 30px !important;
+}
   .doctor-name {
-    font-size: 1.7rem;
+    font-size: 1rem !important;
   }
 
+  .experience {
+    display: none !important;
+  
+}
   .image-section {
     display: flex;
-    /* padding-left: 40%; */
+    
     justify-content: flex-end; /* Align items to the right */
     align-items: center; /* Vertically center items if needed */
     width: 100%;
   }
 
   .doctor-image {
-    max-width: 50vw;
-    display: block;
+    max-width: 50vw !important;
+    display: none;
     margin: 0;
     /* z-index: 1; */
     justify-content: end;
   }
+  
+  .doctor-image_Full {
+display: flex;
+max-width: 28vw !important;
+justify-content: end;
+justify-content: end;
+   }
+.text-line_smalldevice {
+  font-size: 8px !important;
+}
 
   .doctor-position,
   .doctor-degree,
   .custom-text .text-line {
-    font-size: 14.5px;
+    font-size: 6px !important;
   }
 
+ 
+  .doctor-position, .doctor-sub-details {
+padding: 5px 0px !important;
+  }
+  .doctor-sub-details {
+    font-size: 1.6rem !important;
+  }
+
+  .main-container {
+  gap:20px;
+  }
   .experience {
     /* font-size: 15px; */
     /* width: 100%; */
@@ -264,302 +318,15 @@
     z-index: 1;
   }
 
-  .experience .years {
-    font-size: 28px; /* Further reduced font size */
-    text-align: start;
-  }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 11px;
-    padding: 0px 8px;
-    height: auto;
-    text-align: start;
-  }
-
-  .experience {
-    padding: 8px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
-  }
-  .text-line {
-    width: 100%;
-  }
-}
-
-@media (width: 1024px) {
-  .doctor-name {
-    font-size: 2rem;
-  }
-
-  .header {
-    padding: 10px 15px 0px 3rem !important;
-    background: #ebebeb;
-  }
-  .doctor-image {
-    max-width: 38vw !important;
-    display: block;
-    margin: 0;
-    /* z-index: 1; */
-    justify-content: end;
-  }
-  .experience .years {
-    font-size: 3em;  /* Further reduced font size */
-    text-align: start;
-  }
-  .experience .text {
-    /* width: 100%; */
-    width: 180px;
-  
-    height: 75px;
-    font-size: 1em;
-    padding: 0px 8px;
-    height: auto;
-    text-align: start;
+  .enquiry-form button {
+    width: 100%  !important;
   }
  
-}
+  
 
-@media (width: 540px) {
-  .doctor-name {
-    font-size: 20px;
-  }
-
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
-  }
-
-  .doctor-image {
-    max-width: 280px;
-    display: block;
-    margin: 0;
-    /* z-index: 1; */
-    justify-content: end;
-  }
-
-  .doctor-position,
-  .doctor-degree,
-  .doctor-sub-details,
-  .custom-text .text-line {
-    font-size: 16px;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 0%;
-    left: 34%;
-    /* height: auto; */
-    z-index: 1;
-  }
-
-  .experience .years {
-    font-size: 32px; /* Further reduced font size */
-    text-align: start;
-  }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 5px;
-    height: auto;
-    text-align: start;
-  }
-
-  .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
-  }
-  .text-line {
-    width: 100%;
-  }
-}
-
-@media (width: 480px) {
-  .doctor-name {
-    font-size: 20px;
-  }
-
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
-  }
-
-  .doctor-image {
-    max-width: 220px;
-    display: block;
-    margin: 0;
-    /* z-index: 1; */
-    justify-content: end;
-  }
-
-  .doctor-position,
-  .doctor-degree,
-  .doctor-sub-details,
-  .custom-text .text-line {
-    font-size: 16px;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 0%;
-    left: 34%;
-    /* height: auto; */
-    z-index: 1;
-  }
-
-  .experience .years {
-    font-size: 32px; /* Further reduced font size */
-    text-align: start;
-  }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 13px;
-    padding: 0px 8px;
-    height: auto;
-    text-align: start;
-  }
-
-  .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
-  }
-  .text-line {
-    width: 100%;
-  }
-}
-@media (width: 600px) {
-  .doctor-name {
-    font-size: 20px;
-  }
-
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
-  }
-
-  .doctor-image {
-    max-width: 45vw;
-    display: block;
-    margin: 0;
-    /* z-index: 1; */
-    justify-content: end;
-  }
-
-  .doctor-position,
-  .doctor-degree,
-  .doctor-sub-details,
-  .custom-text .text-line {
-    font-size: 16px;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 0%;
-    left: 38%;
-    /* height: auto; */
-    z-index: 1;
-  }
-
-  .experience .years {
-    font-size: 32px; /* Further reduced font size */
-    text-align: start;
-  }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 8px;
-    height: auto;
-    text-align: start;
-  }
-
-  .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
-  }
-  .text-line {
-    width: 100%;
-  }
-}
-
-@media (width: 712px) {
-  .doctor-name {
-    font-size: 20px;
-  }
-
-  .image-section {
-    display: flex;
-    /* padding-left: 40%; */
-    justify-content: center; /* Align items to the right */
-    align-items: center; /* Vertically center items if needed */
-    width: 100%;
-  }
-
-  .doctor-image {
-    max-width: 280px;
-    display: block;
-    margin: 0;
-    /* z-index: 1; */
-    justify-content: end;
-  }
-
-  .doctor-position,
-  .doctor-degree,
-  .doctor-sub-details,
-  .custom-text .text-line {
-    font-size: 16px;
-  }
-
-  .experience {
-    /* font-size: 15px; */
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    transform: translate(-0%, 5%);
-    right: 0%;
-    left: 42%;
-    /* height: auto; */
-    z-index: 1;
-  }
-
-  .experience .years {
-    font-size: 32px; /* Further reduced font size */
-    text-align: start;
-  }
-
-  .experience .text {
-    /* width: 100%; */
-    font-size: 15px;
-    padding: 0px 10px;
-    height: auto;
-    text-align: start;
-  }
-
-  .experience {
-    padding: 10px; /* Reduce padding around the entire experience box */
-    transform: translate(-50%, 5%); /* Adjust overlap on very small screens */
+  .custom-text {
+    font-size: 2em;
+    margin-top: 2%;
   }
   .text-line {
     width: 100%;

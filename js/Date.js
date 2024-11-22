@@ -68,3 +68,26 @@ function openDatePicker() {
             });
         });
     });
+
+
+    // form
+
+    $(document).ready(function() {
+        $('#enquiry-form').on('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            var formData = $(this).serialize(); // Get form data
+
+            $.ajax({
+                url: 'mail.php', // PHP script to handle the form
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    alert(response); // Show success message
+                },
+                error: function() {
+                    alert('There was an error processing your request.');
+                }
+            });
+        });
+    });
